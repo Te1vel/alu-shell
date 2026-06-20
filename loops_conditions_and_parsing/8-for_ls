@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 #displaying a specific type of files
-find . -maxdepth 1 -type f -printf '%f\n'  | cut -d "-" -f2-
+for file *;
+do
+if [ -e "$file" ]; then
+echo "${file#*-}"
+fi
+done
