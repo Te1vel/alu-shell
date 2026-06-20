@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 #dipslaying best school using while but hi is displayed at the 9th loop
 count=0
 while [ "$count" -lt 10 ]
