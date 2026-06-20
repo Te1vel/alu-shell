@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-#displaying a specific type of files
-for file *;
-do
-if [ -e "$file" ]; then
-echo "${file#*-}"
-fi
+# Loop through all non-hidden files and directories
+for file in *; do
+    if [ -e "$file" ]; then
+        printf '%s\n' "${file#*-}"
+    fi
 done
