@@ -1,0 +1,12 @@
+!/usr/bin/env bash
+#dipslaying best school using while but hi is displayed at the 9th loop
+count=0
+while [ "$count" -lt 10 ]
+do 
+	echo "Best School"
+	((count++))
+	
+	if [ "$count" -eq 9 ]; then
+		echo "Hi"
+	fi
+done
